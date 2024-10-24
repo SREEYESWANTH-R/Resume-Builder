@@ -1,0 +1,116 @@
+/* .resume-canvas{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+    "Template Editor";
+}
+
+.Resume-template{
+    grid-area: Template;
+    border:1px solid black
+}
+
+.canvas{
+    grid-area: Editor;
+    border:1px solid yellow;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-rows: 
+    "TextEditor"
+    "ResumeCanvas";
+}
+
+.test-editor{
+    grid-area: TextEditor;
+}
+
+.resume-canvas{
+    grid-area: ResumeCanvas;
+}
+
+.text-editor {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .text-editor input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .text-editor button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .text-editor button:hover {
+    background-color: #0056b3;
+  }
+   */
+
+.resume-canvas {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+        "Template Editor";
+    height: 100vh; /* Make the canvas take the full height of the viewport */
+}
+
+.Resume-template {
+    grid-area: Template;
+    border: 1px solid black;
+    padding: 10px; /* Optional padding */
+}
+
+.canvas {
+    grid-area: Editor;
+    border: 1px solid yellow;
+    display: grid;
+    grid-template-rows: 10% 90%; /* Allocate space for TextEditor and ResumeCanvas */
+    grid-template-areas: 
+        "TextEditor"
+        "ResumeCanvas";
+}
+
+.test-editor {
+    grid-area: TextEditor;
+}
+
+.resume-canvas-area {
+    grid-area: ResumeCanvas;
+    position: relative; /* Positioning context for the canvas */
+    width: 100%;
+    height: 100%;
+}
+
+#designCanvas {
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+}
+
+.text-editor {
+    display: flex;
+    margin-bottom: 10px; /* Space between text editor and canvas */
+}
+
+.text-editor input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.text-editor button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.text-editor button:hover {
+    background-color: #0056b3;
+}
